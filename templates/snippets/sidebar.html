@@ -1,0 +1,120 @@
+
+
+
+  {% if request.user.is_authenticated %}
+
+  {% load static %}
+  
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'home' %}">
+          <i class="bi bi-grid"></i>
+          <h2 style="margin-left: -15px; margin-top:-30px;"><img src="{% static 'images/uglogo.png' %}" alt="sample logo" width="120" height="140"></h2>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'home' %}">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="{% url 'table' %}">
+          <i class="bi bi-menu-button-wide"></i><span>Data tables</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="https://ml-prediction.onrender.com">
+            <i class="bi bi-menu-button-wide"></i><span>ML model</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="{% url 'dashboard' %}">
+            <i class="bi bi-menu-button-wide"></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+      </li> -->
+      
+
+
+<br>
+<br>
+
+
+      <li class="nav-heading">Maps</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://www.ventusky.com/?p=43.4;11.0;5&l=temperature-2m">
+          <i class="bi bi-person"></i>
+          <span>weather </span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://worldview.earthdata.nasa.gov/?v=20.61828547476011,-3.5728898015978894,37.17896169085854,4.716073658647212&l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m,MODIS_Combined_Flood_3-Day,MODIS_Combined_Flood_2-Day(hidden),Land_Water_Map,MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor(hidden)&lg=true&tr=flood-product&t=2022-11-15-T00%3A00%3A00Z">
+          <i class="bi bi-question-circle"></i>
+          <span>Satellite </span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'highres' %}">
+          <i class="bi bi-envelope"></i>
+          <span>High Res</span>
+        </a>
+      </li>
+
+      
+
+<br>
+<br>
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'account' %}">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-question-circle"></i>
+          <span>F.A.Q</span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'about' %}">
+          <i class="bi bi-envelope"></i>
+          <span>About</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+
+
+
+      
+      
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  {% else %}
+
+  
+  
+  {% endif %}

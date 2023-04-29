@@ -1,0 +1,125 @@
+  .sidebar {
+    position: fixed;
+    margin-top: 0;
+    width: 240px;
+    height: 93.5%;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    color: #a5a5a5;
+    background-color: #333333;
+    border-right: 1px solid rgba(100, 100, 100, 0.5);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+    box-shadow: 0 0 30px rgba(97, 96, 96, 0.3);
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 8px 3px 8px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #bebebe;
+    display: block;
+    transition: 0.4s;
+  }
+
+  .sidebar a i {
+    margin-right: 16px;
+  }
+  
+  .active, .sidebar a:hover {
+    color: #b1b1b1;
+    background: #575757;
+    padding-left: 20px;
+  }
+
+ .sidebar header {
+top: 100%;
+left: 50%;
+width: 100%;
+padding: 0px 25%;
+background: #29292900;
+align-items: center;
+z-index: 99;
+}
+
+.sidebar header a {
+top: 100%;
+left: 1px;
+width: 100%;
+padding: 0px 0px 0px 0px;
+font-size: 20px;
+align-items: center;
+z-index: 99;
+}
+
+.sidebar header p {
+font-size: 10px;
+}
+
+hr.solid {
+border-top: 0.1px solid #bbb;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+  .btn {
+width: 150px;
+position: fixed;
+bottom: 0%;
+left: 0%;
+height: 45px;
+background: #212121;
+box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+border-right: 1px solid rgba(100, 100, 100, 0.5);
+outline: none;
+border-radius: 0px;
+cursor: pointer;
+font-size: .8em;
+color: #bbb;
+font-weight: 500;
+transition: 1s ease;
+}
+
+.obtn {
+width: 48px;
+position: fixed;
+bottom: 0%;
+left: 0%;
+height: 45px;
+background: #212121;
+box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+border-right: 1px solid rgba(100, 100, 100, 0.5);
+outline: none;
+border-radius: 0px;
+cursor: pointer;
+font-size: .8em;
+color: #bbb;
+font-weight: 500;
+transition: all .5s;
+}
+
+.btn i {
+margin-right: 20px;
+}
+  
+  .btn:hover {
+    color: #fff;
+    background-color: #424242;
+  }
+
+  .obtn:hover {
+    color: #fff;
+    background-color: #424242;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 10px;}
+  }
